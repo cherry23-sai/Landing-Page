@@ -1,0 +1,223 @@
+body{
+    background-image: url(image.jpeg);
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+}
+.img{
+    height: 170px;
+    width: 250px;
+    display: inline-block;
+}
+#b{
+    display: inline;
+    margin-right: 65px;     
+    margin-bottom: 17px;
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(125, 65, 181);
+}
+#b:hover{
+    cursor: pointer;
+    color: aliceblue;
+}
+.div{
+    text-align: center;
+    margin-top: 70px;
+}
+#p1{
+    font-size: 25px;
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    transition: color 1s ease; /* Smooth transition */
+}
+#p1:hover{
+    color: grey;
+}
+
+#p{
+    font-size: 15px;
+    color: white; 
+    font-family: "Audiowide", sans-serif;
+    transition: color 1s ease; /* Smooth transition */
+}
+#p:hover{
+    color: gray;
+}
+#p2{
+   color: white; 
+   font-family: "Sofadi One", system-ui;
+   font-weight: 400;
+   font-style: normal;
+   transition: color 1s ease; /* Smooth transition */
+}
+#p2:hover{
+    color: gray;
+}
+input {
+background-color: #333; /* Dark input field */
+border: none; /* Remove border */
+color: #ffffff; /* Light text color */
+padding: 10px;
+border-radius: 5px; /* Rounded corners */
+width: 350px; /* Set width */
+transition: background-color 0.3s; /* Smooth transition */
+}
+
+input::placeholder {
+color: #bbb; /* Placeholder text color */
+}
+
+input:focus {
+outline: none; /* Remove outline on focus */
+background-color: #444; /* Slightly lighter on focus */
+}
+
+button {
+background-color: #4e88ee; /* Button color */
+border: none; /* Remove border */
+color: #121212; /* Dark text color */
+padding: 10px 15px;
+border-radius: 5px; /* Rounded corners */
+cursor: pointer; /* Pointer cursor */
+margin-left: 10px; /* Space between input and button */
+transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+background-color: #330aea; /* Slightly darker on hover */
+}
+.about{
+display: flex; /* Use flexbox for layout */
+align-items: center; /* Center items vertically */
+padding: 20px; /* Add some padding */
+background-color: #343232; /* White background for the container */
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+border-radius: 10px; /* Optional: rounded corners */
+margin-top: 150px;
+height: 300px;
+}
+#p4{
+flex: 1; /* Allow text content to grow */
+padding-right: 20px; /* Space between text and image */
+padding-top: 90px;
+color: whitesmoke;
+font-family: "Kanit", sans-serif;
+font-weight: 100;
+font-style: normal;
+width: 500px;
+margin-left: 60px;
+}
+.us{
+flex: 1; /* Allow image content to grow */
+width: 35%;
+}
+.img2 img{
+width: 200px; /* Ensure the image is responsive */
+height: 150px; /* Maintain aspect ratio */
+margin-right: 310px;
+padding-top: 90px;
+}
+
+.logo{
+opacity: 0;
+transform: scale(0.5); /* Start scaled down */
+animation: fadeInScale 1s forwards; /* Animation for logo */
+}
+@keyframes fadeInScale {
+0% {
+    opacity: 0;
+    transform: scale(0.5);
+}
+50% {
+    opacity: 1; /* Fade in to visible */
+    transform: scale(1.1); /* Scale slightly larger */
+}
+100% {
+    transform: scale(1); /* Scale back to original size */
+}
+}
+h3{
+flex: 1;
+margin-right: 250px;
+margin-bottom: 200px;
+border-bottom: 2px solid #522ee4; /* Color and thickness of the underline */
+padding-bottom: 2px; /* Space between text and underline */
+font-family: "Pacifico", cursive;
+font-weight: 400;
+font-style: normal;
+}
+.about1{
+display: flex; /* Use flexbox for layout */
+align-items: center; /* Center items vertically */
+padding: 20px; /* Add some padding */
+background-color: #343232; /* White background for the container */
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+border-radius: 10px; /* Optional: rounded corners */
+margin-top: 15px;
+height: 200px;
+}
+.img3 img{
+width: 200px; /* Ensure the image is responsive */
+height: 150px; /* Maintain aspect ratio */
+margin-left: 380px;
+padding-top: 45px;
+}
+#s{
+font-size: 15px;
+color: white; 
+font-family: "Audiowide", sans-serif;
+margin-left: 350px;
+}
+#p5{
+padding-bottom: 10px ;
+padding-left: 60px;
+padding-right: 50px;
+color: whitesmoke;
+font-size: 15px; 
+font-family: "Audiowide", sans-serif;
+}
+.footer {
+background-color: #333; /* Dark background */
+color: #fff; /* White text color */
+padding: 20px 0; /* Padding for top and bottom */
+text-align: center; /* Center align text */
+margin-top: 10px;
+}
+
+.footer-container {
+max-width: 1200px; /* Max width for the content */
+margin: 0 auto; /* Center the container */
+padding: 0 20px; /* Side padding */
+}
+
+.footer-links a {
+color: #fff; /* Link color */
+margin: 0 15px; /* Spacing between links */
+text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+text-decoration: underline; /* Underline on hover */
+}
+
+.footer-info {
+margin-top: 10px; /* Space above the info section */
+}
+
+.footer-info a {
+color: #fff; /* Link color */
+text-decoration: none; /* Remove underline */
+}
+
+.footer-info a:hover {
+text-decoration: underline; /* Underline on hover */
+}
